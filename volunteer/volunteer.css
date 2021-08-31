@@ -180,4 +180,37 @@ color: crimson;
  }
 /*End Header section*/
 
+/*welcome section*/
+#welcome{
+  background-image: url(./imagestest/marek-okon-tWWCqIMiUmg-unsplash.jpg);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+  }
+  #welcome ::after{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: .7;
+  z-index: -1;
+  }
+  #welcome.welcome{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  justify-content: flex-start;
+  }
+  #welcome h1 {
+  display: block;
+  width: fit-content;
+  font-size: 4rem;
+  position: relative;
+  color:transparent;
+  animation: text_reveal .5s ease forwards;
+  animation-delay:.1s;
+  }
 
