@@ -32,5 +32,15 @@ section .wave{
 	
 
 }
+#intro1
+{
+    align-items: center;
+    color: white;
+    letter-spacing: 0.0125em !important;
+    padding-left: 2%;
+    line-height: 1.6; 
+    font-size:19px;
+
+}
 
 
