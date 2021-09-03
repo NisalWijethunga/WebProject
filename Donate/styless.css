@@ -111,7 +111,7 @@ section .wave{
 .topmiddle-para p{
     text-align:center;
     white-space:pre-wrap;
-    line-height: 1.6em;
+    line-height: 0.7em;
     font-weight: 400;
     font-size: 18px;
     color: dimgray;
