@@ -108,4 +108,13 @@ section .wave{
     font-size: 32px;
 
 }
+.topmiddle-para p{
+    text-align:center;
+    white-space:pre-wrap;
+    line-height: 1.6em;
+    font-weight: 400;
+    font-size: 18px;
+    color: dimgray;
+}
+
 
