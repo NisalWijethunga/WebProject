@@ -100,5 +100,12 @@ section .wave{
     transform: scale(0);
 
 }
+.topmiddle h1{
+    text-align:center;
+    white-space:pre-wrap;
+    margin-top: 3%;
+    font-weight: 400;
+    font-size: 32px;
 
+}
 
