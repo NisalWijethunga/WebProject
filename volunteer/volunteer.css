@@ -264,7 +264,79 @@ color: crimson;
     }
     /*End wlcome section*/
 
-
+/*Ocean Campaign section*/
+#Campaign .Campaign{
+  flex-direction: column;
+  text-align: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 100px 0;
+  }
+  
+  #Campaign .Campaign-top p{
+  width: 500px;
+  margin: 0 auto;
+  letter-spacing: .05rem;
+  font-weight: 500;
+  }
+  #Campaign .Campaign-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40PX;
+  }
+  #Campaign .Campaign-card{
+  flex-basis: 80%;
+  display: flex-start;
+  justify-content: center;
+  flex-direction:column;
+  padding: 30px;
+  border-radius: 10px;
+  background-position:center;   
+  background-image: url(./imagestest/photo-1596269264102-b286ad132ef0.jpg);
+  background-size: cover;
+  margin: 10px 0%;
+  cursor: pointer;
+  transition: transform 0.7s;
+  position: relative;
+  z-index: 1;
+  }
+  #Campaign .Campaign-card:hover{
+  transform: translateY(-5px);
+  }
+  #Campaign .Campaign-card::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .8;
+  z-index: -1;
+  } 
+  #Campaign .Campaign-card h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color:midnightblue;
+  text-transform: uppercase;
+  }
+  #Campaign .Campaign-card p{
+  text-align: left;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  font-weight:400;
+  letter-spacing: .05rem;
+  }
+  #Campaign .Campaign-paragraph p{
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 1.9rem;
+  letter-spacing: .05rem;
+  font-weight: 500;
+  }
+  /*End Ocean Campaign section*/
+  
 
 
 
