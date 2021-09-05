@@ -205,5 +205,35 @@ section .wave{
     width: 200px;
     height: auto;
 }
+.inner_footer .footer_third{
+
+    width: calc(21.6666666667% - 20px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+}
+.inner_footer .footer_third:last-child{
+
+    margin-right: 0;
+}
+.inner_footer .footer_third h1{
+    font-family: 'arial';
+    font-size: 22px;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.inner_footer .footer_third a{
+    font-family: 'arial';
+    font-size: 15px;
+    color: white;
+    display: block;
+    font-weight: 200;
+    width: 100%;
+    padding-bottom: 5px;
+    text-decoration: none;
+    list-style: none;
+}
 
 
