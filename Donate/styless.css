@@ -163,5 +163,16 @@ section .wave{
     padding-top: 10%;
     font-size: 25px;
 }
+.box2{
+
+    background: #0c1a1e;
+    width: 600px;
+    height: 350px;
+    margin-left: 10%;
+    margin-top: -53%;
+    color: antiquewhite;
+    font-family: sans-serif;
+    opacity: 95%;
+}
 
 
