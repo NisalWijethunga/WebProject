@@ -134,5 +134,34 @@ section .wave{
     margin-left: 42%;
     margin-top: 10%;
 }
+.middletext{
+    line-height: 1.7em;
+
+
+}
+.box1{
+
+    background: #0c1a1e;
+    width: 600px;
+    height: 350px;
+    margin-left: 40%;
+    margin-top: -45%;
+    color: antiquewhite;
+    font-family: sans-serif;
+    opacity: 95%;
+
+}
+.container1{
+    width:560px ;
+    height:340px ;
+    text-align: center;
+    padding-left: 12px;
+}
+.middleheader1{
+
+    text-align: center;
+    padding-top: 10%;
+    font-size: 25px;
+}
 
 
