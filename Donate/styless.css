@@ -174,5 +174,36 @@ section .wave{
     font-family: sans-serif;
     opacity: 95%;
 }
+.footer
+{
+    width:100%;
+    display: block;
+    overflow: hidden;
+    padding: 70px 0;
+    box-sizing: border-box;
+    background-color:#18181a;
+    margin-top:54px;
+    background-attachment: fixed;
+}
+.inner_footer{
+
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 30%;
+
+}
+.inner_footer .logo_container{
+
+    width: 35%;
+    float: left;
+    height: 100%;
+    display: block;
+
+}
+.inner_footer .logo_container img{
+    width: 200px;
+    height: auto;
+}
 
 
