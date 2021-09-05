@@ -21,3 +21,9 @@ nav{
     flex: 1;
     text-align: right;
 }
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
