@@ -49,3 +49,14 @@ nav{
 nav.fa{
     display: none;
 }
+.text{
+    width: 90%;
+    color: #6600cc;
+    position: absolute;
+    top: 35%;
+    left: 60%;
+    transform: translate(-50% -50%);
+}
+.text h1{
+    font-size: 750%;
+}
