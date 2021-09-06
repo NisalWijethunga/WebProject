@@ -34,3 +34,18 @@ nav{
     font-family: 'STIX Two Math', serif;
 
 }
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #f44336;
+    display: block;
+    margin-left: auto;
+    transition: 0.5s;
+}
+.nav-linksul li:hover::after{
+    width: 100%;
+}
+nav.fa{
+    display: none;
+}
