@@ -60,3 +60,14 @@ nav.fa{
 .text h1{
     font-size: 750%;
 }
+#Vision{
+    border: 5px solid black;
+    font-family: 'Aladin', cursive;
+    color: black;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+	font-size:22px;
+	text-align:center;
+	background-color:#20faf7;
+}
