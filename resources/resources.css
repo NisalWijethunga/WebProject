@@ -10,3 +10,19 @@ body{
         background-image: url("https://www.desktopbackground.org/download/o/2010/04/27/8551_underwater-wallpapers-3112-amazing-hd-wallnos-com_1680x1050_h.jpg ");
         background-repeat: no-repeat;
     }
+
+    h1{
+
+        color: rgb(225, 240, 15); 
+        font-family: monospace ;
+        font-size: 50px;
+        
+      }
+      
+      h2{
+      
+          color: dodgerBlue;
+          font-size: 30px;
+      
+      }
+      
