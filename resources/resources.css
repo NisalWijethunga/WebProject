@@ -26,3 +26,20 @@ body{
       
       }
       
+      #para2{
+    
+        margin: 0;
+    padding : 0.25em;
+    
+    
+     
+    
+    }
+    
+    .problems1{
+        border: 5px lightcyan;
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+        background-color: aqua;
+    }
