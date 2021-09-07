@@ -337,7 +337,74 @@ color: crimson;
   }
   /*End Ocean Campaign section*/
   
-
+ /*Marine section*/
+ 
+#Marine .Marine {
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+  }
+  #Marine .Marine-headerh1 {
+  margin-bottom: 50px;
+  }
+  #Marine .Marine-project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  }
+  #Marine .project-card {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  }
+  #Marine .project-dis {
+  padding: 30px;
+  flex-basis: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  color: white;
+  }
+  #Marine .project-dis h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  }
+  #Marine .project-dis h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 10px;
+  }
+  #Marine .project-dis p{
+  font-size: 1.2rem;
+  margin-top: 5px;
+  font-weight: 500;
+  line-height: 2.5rem;
+  letter-spacing: .05rem;
+  justify-content: center;
+  }
+  #Marine .project-img {
+  flex-basis: 50%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  transition: .3s ease transform;
+  cursor: pointer;
+  }
+  #Marine .project-card:hover .project-img {
+  transform: scale(1.1);
+  }
+  /* End Marine section*/
+  
 
 
 
