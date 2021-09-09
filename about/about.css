@@ -84,3 +84,31 @@ nav.fa{
 	text-align:center;
 	background-color:#20faf7;
 }
+.meetus{
+    margin: 100px auto;
+    width: 70%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./image/marine31.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;    
+    padding: 100px 0;
+}
+.meetus h1{
+    color:#fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+.meet-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px;
+}
+.meet-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+
+}
