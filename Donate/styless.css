@@ -1,6 +1,12 @@
+html{
+    height: 100%;
+}
 body{
     margin: 0px;
     padding: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 section{
     position: relative;
@@ -69,6 +75,7 @@ section .wave{
     transition: transform 0.5s;
     transform-origin: bottom right;
     transform: scale(0);
+
 }
 .button a:hover:before{
 
@@ -100,6 +107,10 @@ section .wave{
     transform: scale(0);
 
 }
+/*.body-wrapper{
+
+    min-height: 100%;
+}*/
 .topmiddle h1{
     text-align:center;
     white-space:pre-wrap;
@@ -111,7 +122,7 @@ section .wave{
 .topmiddle-para p{
     text-align:center;
     white-space:pre-wrap;
-    line-height: 0.7em;
+    line-height: 0.8em;
     font-weight: 400;
     font-size: 18px;
     color: dimgray;
@@ -249,6 +260,21 @@ section .wave{
     width: 100%;
     padding-top: 20px;
     line-height: 1.6em;
+}
+/*.footer-bottom{
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}*/
+@media(max-width: 600px){
+    .footer .inner_footer{
+        width: 90%;
+    }
+    .inner_footer .logo_container,
+    .inner_footer .footer_third{
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
 
 
