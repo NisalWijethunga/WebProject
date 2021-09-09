@@ -43,3 +43,38 @@ body{
         flex-direction: column;
         background-color: aqua;
     }
+
+    .problems1 p{
+        font: small-caps bold 1.2rem sans-serif;
+        text-align: center;
+        background-color: aqua;
+    
+    }
+    .problems2{
+        border: 10px lightcyan;
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+        background-color: cadetblue;
+    }
+    
+    .problems2 p{
+        font: small-caps bold 1.2rem sans-serif;
+        text-align: center;
+    background-color: cadetblue;
+    }
+    
+    .problems3{
+        border: 10px lightcyan;
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+        background-color: coral;
+    }
+    
+    .problems3 p{
+        font: small-caps bold 1.2rem sans-serif;
+        text-align: center;
+    background-color: coral;
+    }
+    
