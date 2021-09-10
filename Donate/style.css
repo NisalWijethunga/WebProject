@@ -13,3 +13,232 @@ body{
   padding: 10px;
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
+
+.row {
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.col-50 {
+    -ms-flex: 50%;
+    flex: 50%;
+}
+.label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.pay[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 9px;
+    border: 1px solid rgb(130, 26, 26);
+    border-radius: 1px;
+}
+
+
+#honor
+{
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.active, .btn:hover {
+  background-color: #666;
+  color: white;
+}
+
+.wrapper {
+  width: 780px;
+  margin: 30px auto 0;
+}
+
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 185px;
+}
+
+.container1 .option_item {
+  display: block;
+  position: relative;
+  width: 175px;
+  height: 100px;
+  margin: -13px;
+}
+#dd
+{
+  margin-left: 260px;
+}
+
+.container1 .option_item .checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+}
+
+.option_item .option_inner {
+  width: 75%;
+  height: 0%;
+  background: #065b75;
+  border-radius: 5px;
+  text-align: center;
+  padding: 25px 23px;
+  font-style: italic;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+  display: block;
+  border: 5px solid transparent;
+  position: relative;
+}
+
+.option_item .option_inner .icon {
+  margin-bottom: 10px;
+}
+
+.option_item .option_inner .icon .fab {
+  font-size: 32px;
+}
+
+.option_item .option_inner .name {
+  user-select: none;
+}
+
+.option_item .checkbox:checked ~ .option_inner.honor {
+  border-color: #55acee;
+  color:white;
+}
+
+.option_item .checkbox:checked ~ .option_inner.memory {
+  border-color: #55acee;
+  color: white;
+}
+.option_item .option_inner .tickmark {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border: 20px solid;
+  border-color: #000 transparent transparent #000;
+  display: none;
+}
+
+.option_item .option_inner .tickmark:before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  width: 15px;
+  height: 5px;
+  border: 3px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+}
+
+.option_item .checkbox:checked ~ .option_inner .tickmark {
+  display: block;
+}
+
+.option_item .option_inner.facebook .tickmark {
+  border-color: #3b5999 transparent transparent #3b5999;
+}
+
+.option_item .option_inner.twitter .tickmark {
+  border-color: #55acee transparent transparent #55acee;
+}
+hr{
+  border: black 1px solid;
+}
+.container{
+  max-width: 800px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.70);
+  margin-top: 1040px;
+}
+.container h1
+{
+  text-align: center;
+}
+.container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.container .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 60px;
+  border-radius: 5px;
+  background:#26344a;
+}
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #9b59b6;
+}
+ 
+ form .button{
+   height: 45px;
+   margin: 35px 0
+ }
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background:#26344a;
+ }
+ form .button input:hover{
+  background: linear-gradient(-135deg, #71b7e6,#26344a);
+  }
+ 
