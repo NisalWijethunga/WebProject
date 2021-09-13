@@ -4,45 +4,49 @@
     <meta charset="UTF-8">
     <title>FORM</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.js"></script>
    </head>
 <body>
   <div class="container">
     <h1>DONATE TO PROTECT MARINE HABITATES</h1><br><br>
     <div class="title">Your Info:</div>
     <div class="content">
-      <form action="" method="POST">
+      <form  id="validate" action="" method="POST">
         <div class="user-details">
           <div class="input-box">
             <span class="details">First Name</span>
-            <input name="fname" type="text" placeholder="First Name">
+            <input name="fname" type="text" placeholder="First Name" required>
           </div>
           <div class="input-box">
             <span class="details">Last Name</span>
-            <input name="lname" type="text" placeholder="Last Name">
+            <input name="lname" type="text" placeholder="Last Name" required>
           </div>
           <div class="input-box">
             <span class="details">Address</span>
-            <input name="Address" type="text" placeholder="Enter your Address">
+            <input name="Address" type="text" placeholder="Enter your Address" required>
           </div>
           <div class="input-box">
             <span class="details">City</span>
-            <input name="City" type="text" placeholder="Enter your City">
+            <input name="City" type="text" placeholder="Enter your City" required>
           </div>
           <div class="input-box">
             <span class="details">Zip Code</span>
-            <input name="Zip" type="text" placeholder="Enter your Zip Code">
+            <input name="Zip" type="text" placeholder="Enter your Zip Code" required>
           </div>
           <div class="input-box">
             <span class="details">Phone Number</span>
-            <input name="Phone" type="text" placeholder="Confirm your Phone Number">
+            <input name="Phone" type="text" placeholder="Confirm your Phone Number" required>
           </div>
              <div class="input-box">
               <span class="details">Comments</span>
           <textarea rows="6" cols="52" name="comment" placeholder="Enter your Comments Here"></textarea>
         </div>
         </div><br><hr><br>
-
 
         <div class="title">Payment Info:</div><br>
         <label for="fname">Accepted Cards</label>
@@ -56,86 +60,83 @@
         <div class="user-details">
           <div class="input-box">
             <span class="details">Name On Card</span>
-            <input  type="text" id="cname" name="cardname" placeholder="Card Holder Name">
+            <input  type="text" id="cname" name="cardname" placeholder="Card Holder Name"required>
           </div>
           
            <div class="input-box">
             <span class="details">Credit card number</span>
-            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <input ttype="text" id="ccnum" name="cardnumber"  placeholder="1111-2222-3333-4444"required>
           </div>
            <div class="input-box">
             <span class="details">Exp Month</span>
-            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <input type="text" id="expmonth" name="expmonth" placeholder="September"required>
           </div>
 
           <div class="row">
                             <div class="col-50">
                                 <label class="label" for="expyear">Exp Year</label>
-                                <input class="pay" type="text" id="expyear" name="expyear" placeholder="2021">
+                                <input class="pay" type="text" id="expyear"  name="expyear" placeholder="2021"required>
                             </div>
                             <div class="col-50">
                                 <label class="label" for="cvv">CVV</label>
-                                <input class="pay" type="text" id="cvv" name="cvv" placeholder="000">
+                                <input class="pay"  type="text" id="cvv" name="cvv" placeholder="000"required>
                             </div>
                         </div>
+            <div>
+              <div class="title">Your Gifts</div>
+              <div class="wrapper">
+  <div class="container1">
+    <label class="option_item">
+      <input type="checkbox" class="checkbox" name="price" value="$5">
+      <div class="option_inner honor">
+        <div class="tickmark"></div>
+       <div class="name">$5</div>
+      </div>
+    </label>
 
-                        <div>
-                            <div class="title">Your Gifts</div>
-                            <div class="wrapper">
-                <div class="container1">
-                  <label class="option_item">
-                    <input type="checkbox" class="checkbox" name="price" value="$5">
-                    <div class="option_inner honor">
-                      <div class="tickmark"></div>
-                     <div class="name">$5</div>
-                    </div>
-                  </label>
-              
-                  <label class="option_item">
-                    <input type="checkbox" class="checkbox" name="price" value="$20">
-                    <div class="option_inner memory">
-                      <div class="tickmark"></div>
-                     <div class="name">$20</div>
-                    </div>
-                  </label>
-              
-                  <label class="option_item">
-                    <input type="checkbox" class="checkbox" name="price" value="$50">
-                    <div class="option_inner memory">
-                      <div class="tickmark"></div>
-                     <div class="name">$50</div>
-                    </div>
-                  </label>
-              
-                  <label class="option_item">
-                    <input type="checkbox" class="checkbox" name="price" value="$100">
-                    <div class="option_inner memory">
-                      <div class="tickmark"></div>
-                     <div class="name">$100</div>
-                    </div>
-                  </label>
-              
-                  <label class="option_item">
-                    <input type="checkbox" class="checkbox" name="price" value="$200">
-                    <div class="option_inner memory">
-                      <div class="tickmark"></div>
-                     <div class="name">$200</div>
-                    </div>
-                  </label>
-              
-                  <label class="option_item">
-                    <input type="checkbox" class="checkbox" name="price" value="$1000">
-                    <div class="option_inner memory">
-                      <div class="tickmark"></div>
-                     <div class="name">$1000</div>
-                    </div>
-                  </label>
-                  </div>
-              </div>
+    <label class="option_item">
+      <input type="checkbox" class="checkbox" name="price" value="$20">
+      <div class="option_inner memory">
+        <div class="tickmark"></div>
+       <div class="name">$20</div>
+      </div>
+    </label>
 
+    <label class="option_item">
+      <input type="checkbox" class="checkbox" name="price" value="$50">
+      <div class="option_inner memory">
+        <div class="tickmark"></div>
+       <div class="name">$50</div>
+      </div>
+    </label>
 
-              <label for="gift">I don't Like to make a gift</label><br>
-            <input id="gift" name="gift" value="No" type="checkbox">
+    <label class="option_item">
+      <input type="checkbox" class="checkbox" name="price" value="$100">
+      <div class="option_inner memory">
+        <div class="tickmark"></div>
+       <div class="name">$100</div>
+      </div>
+    </label>
+
+    <label class="option_item">
+      <input type="checkbox" class="checkbox" name="price" value="$200">
+      <div class="option_inner memory">
+        <div class="tickmark"></div>
+       <div class="name">$200</div>
+      </div>
+    </label>
+
+    <label class="option_item">
+      <input type="checkbox" class="checkbox" name="price" value="$1000">
+      <div class="option_inner memory">
+        <div class="tickmark"></div>
+       <div class="name">$1000</div>
+      </div>
+    </label>
+    </div>
+</div>
+<label for="gift">I didn't Like to make a gift</label><br>
+            <input id="gift" name="gift" value="No" type="checkbox" ">
             <div id="honor">
             In Honor or memory
             <br>
@@ -156,8 +157,6 @@
        <div class="name">Memory</div>
       </div>
     </label>
-
-    
     </div>
 </div>
 </div>
@@ -166,12 +165,67 @@
 </div>
         <div class="button">
           <input type="submit" value="Donate">
+        </div>
+      </form>
+    </div>
+  </div>
+<script>
+    $('#validate').validate({
+        roles: {
+            fname: {
+                required: true,
+            },
+            lname: {
+                required: true,
+            },
+            Address: {
+                required: true,
+            },
+            City: {
+                required: true,
+            },
+            Zip: {
+                required: true,
+            },
+            Phone: {
+                required: true,
+            },
+            comment:{
+              required:true,
+            },
+            cardname: {
+                required: true,
+            },
+            cardnumber: {
+                required: true,
+            },
+            expmonth: {
+                required: true,
+            },
+            expyear: {
+                required: true,
+            },
+            cvv: {
+                required: true,
+            },
+           
+        },
+        messages: {
+            fname:"Please input first name*",
+            lname:"Please Input Last name*",
+            City:"Please input city*",
+            Address:"Please input address*",
+            Zip:"Please input Zip code*",
+            comment:"Please enter comment here*",
+            cardname:"Please input card name*",
+            cardnumber:"Please input card number*",
+            expmonth:"Please input exp month*",
+            expyear:"Please input exp year*",
+            cvv:"Please input cvv*",
+        },
+    });
+</script>
 
-          </div>
-          </form>
-          </div>
-       </div>
 
 </body>
 </html>
-         
