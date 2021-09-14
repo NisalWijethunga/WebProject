@@ -74,40 +74,14 @@ ul li.active a:hover
 
 /* Drop-down Menu */
 
-.dropdownmenu
-{
-	display: none;
-}
 
-ul li:hover .dropdownmenu
-{
-	display: block;
-	position: absolute;
-	background: transparent;
-	border-radius: 25px;
-	margin-top: 5px;
-	margin-left: -15px;
-}
 
-ul li:hover .dropdownmenu ul li
-{
-	display: block;
-	margin: 5px;
-	background: transparent;
-	width: 240px;
-	padding: 10px;
-	text-align: left;
-}
 
-ul li:hover .dropdownmenu ul li a:hover
-{
-	color: #fff;
-	border: 1px solid transparent;
-	background-color: #000;
-	opacity: 0.8;
-	border-radius: 30px;
-	transition: 0.5s ease;
-}
+
+
+
+
+
 
 /* Main Heading */
 
