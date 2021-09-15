@@ -537,6 +537,73 @@ color: crimson;
    }
 }
 /*End of keyforms for text reveal*/
+/*media query for tablet*/
+@media only screen and (min-width:768px)  {
+  .cta{
+    font-size: 2.5rem;
+    padding: 20px 60px; 
+  }
+  .h1 .section-title{
+    font-size: 6rem;
+  }
+  #welcome h1{
+    font-size: 6rem;
+  }
+  #Campaign .Campaign-bottom .Campaign-card{
+    flex-basis: 35%;
+    margin: 1.5%;
+  }
+  #Marine .project-card{
+    flex-direction: row;
+  }
+  #Marine .project-card:nth-child(even){
+    flex-direction: row-reverse;
+  }
+  #Marine .project-card {
+    height: 400px;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+  #Marine .Marine-project .project-dis{
+    height: 100%;
+  }
+  #Marine .Marine-project .project-img{
+    height: 100%;
+  }
+ }
+
+/*end media query for tablet*/
+
+/*Media query for desktop*/
+
+@media only screen and (min-width:1200px) {
+
+  .header .hamburger{
+    display: none;
+  }
+  .header .nav-list ul {
+    position: initial;
+    display: block;
+    height: auto;
+    width: fit-content;
+    background-color: transparent;
+  }
+  .header .nav-list ul li{
+    display: inline-block;
+  }
+  .header .nav-list ul li a {
+    font-size: 1.8rem;
+  }
+  .header .nav-list ul a::after{
+    display:none;
+  }
+  #campaign .Campaign-bottom .Campaign-card{
+    flex-basis: 25%;
+    margin: 1.5;
+  }
+}
+/*Media query for desktop*/
 
 
 
