@@ -2,63 +2,38 @@
     margin: 0;
     padding: 0;
 }
-.header{
-    min-height: 100vh;
-    width: 100%;
-    background-image: url(./image/marine11.jpeg);
-    background-position: center;
-    background-size: 87% 99%;
+body{
+    background-color: #fff3f3;
+}
+#banner{
+    height: 750px;
+    width: 1535px;
+    background-image: url(./image/marine28.jpeg);
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
-nav{
-    display: flex;
-    padding: 6% 6%;
-    justify-content: space-between;
-    align-items: center;
+.banner-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 130px;
 }
-.nav-links{
-    flex: 1;
-    text-align: right;
+.banner-text h1{
+    font-size: 130px;
+    font-family: 'Kaushan Script', cursive;
 }
-.nav-links ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-}
-.nav-links ul li a{
-    color: black;
-    text-decoration: none;
-    font-size: 30px;
-    font-family: 'STIX Two Math', serif;
 
-}
-.nav-links ul li::after{
-    content: '';
-    width: 0%;
-    height: 5px;
-    background: #f44336;
-    display: block;
-    margin-left: auto;
-    transition: 0.5s;
-}
-.nav-linksul li:hover::after{
-    width: 100%;
-}
-nav.fa{
-    display: none;
-}
-.text{
-    width: 90%;
-    color: #6600cc;
-    position: absolute;
-    top: 35%;
-    left: 60%;
-    transform: translate(-50% -50%);
-}
-.text h1{
-    font-size: 750%;
+@media screen and (max-width: 700px) {
+    #banner{
+        background: url(./image/marine28.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 620px;
+        width: 360px;
+    }
+    .banner-text{
+        font-size: 44px;
+    }
 }
 #Vision{
     border: 5px solid black;
