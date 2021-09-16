@@ -871,4 +871,52 @@ input{
 	color: var(--text-color);
   }
 
+ 
+/*___________________scroll up___________________*/
+
+
+.scrollup {
+	position: fixed;
+	right: 1rem;
+	bottom: -20%;
+	background-color: var(--first-color);
+	padding: .5rem;
+	display: flex;
+	opacity: .9;
+	z-index: var(--z-tooltip);
+	transition: .4s;
+  }
+  
+  .scrollup:hover {
+	background-color: var(--first-color-alt);
+	opacity: 1;
+  }
+  
+  .scrollup__icon {
+	color: var(--white-color);
+	font-size: 1.2rem;
+  }
+  
+  /* Show scroll */
+  .show-scroll {
+	bottom: 5rem;
+  }
+  
+  /*________________ SCROLL BAR _______________*/
+
+
+  ::-webkit-scrollbar {
+	width: .60rem;
+	background-color: var(--scroll-bar-color);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+	background-color: var(--scroll-thumb-color);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+	background-color: var(--text-color-light);
+  }
+
+ 
   
