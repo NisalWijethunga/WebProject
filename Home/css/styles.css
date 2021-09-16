@@ -1120,6 +1120,100 @@ input{
 	  }
   }
 	
+
+ 
+
+  /* For large devices */
+
+  @media screen and (min-width: 1024px) {
+
+	.container {
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+
+	.home1_container {
+	  grid-template-rows: 2fr .5fr;
+	  max-height: 100vh;
+	}
+
+	.home1_info {
+	  width: 328px;
+	  grid-template-columns: 1fr 2fr;
+	  column-gap: 2rem;
+	}
+
+	.home1_info-title {
+	  font-size: var(--normal-font-size);
+	}
+
+	.home1_info-img {
+	  width: 240px;
+	}
+
+	.home3_img-one {
+	  width: 230px;
+	}
+
+	.home3_img-two {
+	  width: 290px;
+	}
+
+	.whatwedo_card {
+	  width: 237px;
+	}
+	.whatwedo_container {
+	  width: 700px;
+	}
+	.whatwedo_data {							             	
+	  left: 1.5rem;
+	  bottom: 2rem;
+	}
+	.whatwedo_title {
+	  font-size: var(--h2-font-size);
+	} 
+
+	.experience_content {
+	  margin: var(--mb-1) 0;
+	  column-gap: 4.5rem;
+	}
+
+	.experience_overlay:nth-child(1) {
+	  width: 463px;                                                    
+	  margin-right: 7rem;
+	}
+	.experience_overlay:nth-child(2) {
+	  width: 220px;
+	  top: 3rem;
+	}
+
+
+	.home4_container {
+	  grid-template-columns: .7fr;
+	}
+
+	.home4_description {
+	  padding: 0 8rem;
+	}
+
+	.problem_container {
+	  gap: 3rem 3rem;
+	} 
+
+	.problem_card{
+		height: 800px;
+		width: 400px;
+	}
+
+	.problem_img {
+	  height: 800px;
+	  width: 400px;
+	}
+
+	.footer_content {
+	  justify-items: center;
+	}
+  }
   
   
   
