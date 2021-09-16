@@ -212,31 +212,25 @@ input{
 
 
 
+/*__________________ Header _______________________________*/
 
-
-
-
-
-
-
-
-/* Main Heading */
-
-.title_main
-{
-	position: absolute;
-	top: 60%;
-	left: 26%;
-	transform: translate(-50%,-50%);
+.header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: var(--z-fixed);
+	background-color: transparent;
 }
 
-.title_main h1
-{
-	color: #fff;
-	font-size: 85px;
-	transition: 1.5s ease;
-	text-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-}
+
+
+
+
+
+
+
+
 
 /* Logo */
 
