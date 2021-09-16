@@ -50,3 +50,17 @@ function scrollHeader(){
 window.addEventListener('scroll', scrollHeader)
 
 
+
+/*__________________Swiper What we do_____________________*/
+
+var swiper = new Swiper(".whatwedo_container", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop: true,
+    spaceBetween:32,
+    coverflowEffect: {
+      rotate: 0,
+    },
+  });
