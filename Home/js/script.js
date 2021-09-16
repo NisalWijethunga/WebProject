@@ -64,3 +64,41 @@ var swiper = new Swiper(".whatwedo_container", {
       rotate: 0,
     },
   });
+
+
+  
+
+/*_________________Home4 -  videos ______________________________*/
+
+const home4File = document.getElementById('home4-file'),
+home4Button = document.getElementById('home4-button'),
+home4Icon = document.getElementById('home4-icon')
+
+function playPause(){ 
+if (home4File.paused){
+  // Play video
+  home4File.play()
+  // change the icon
+  home4Icon.classList.add('ri-pause-line')
+  home4Icon.classList.remove('ri-play-line')
+}
+else {
+  // Pause video
+  home4File.pause(); 
+  // change the icon
+  home4Icon.classList.remove('ri-pause-line')
+  home4Icon.classList.add('ri-play-line')
+}
+}
+home4Button.addEventListener('click', playPause)
+
+function finalVideo(){
+// Video ends, icon change
+home4Icon.classList.remove('ri-pause-line')
+home4Icon.classList.add('ri-play-line')
+}
+// ended, when the video ends
+home4File.addEventListener('ended', finalVideo)
+
+
+
