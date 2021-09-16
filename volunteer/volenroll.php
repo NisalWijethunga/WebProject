@@ -26,7 +26,7 @@ else
 
 
  $sql="INSERT INTO enroll(Firstname,Lastname,Uname,DateOfBirth,Email,Pnum,address,country)
-    VALUES ('$Firstname','$Lastname','$Uname','$DateOfBirth','$Email','$Pnum','$address','$country')";   
+    VALUES ('$Firstname','$Lastname','$Uname','$DateOfBirth','$Email','$Pnum','$address','$country')";
 }
 
 if(mysqli_query($conn,$sql))
@@ -37,4 +37,6 @@ else
 {
 echo "error";
 }
+
+
 ?>
