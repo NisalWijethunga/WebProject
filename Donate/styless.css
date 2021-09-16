@@ -304,3 +304,38 @@ section .wave{
 .banner .imgBx img.active{
     opacity: 1;
 }
+.controls{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 80px;
+
+}
+.controls li{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.controls li:hover{
+    background: #ffeb3b;
+}
+.controls li:before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-left: 3px solid #111;
+    border-bottom: 3px solid #111;
+    transform: rotate(45deg);
+
+}
+.controls li:nth-child(2):before{
+    transform: rotate(225deg);
+}
