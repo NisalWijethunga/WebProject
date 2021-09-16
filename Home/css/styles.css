@@ -348,5 +348,84 @@ input{
   
 
 
+/*_______________ Home 1 ____________________________________________*/
+
+.home1_img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	object-position: 83%;
+}
+
+
+                                /*change this or remove- replace sublime home content part  */
+.home1_container{
+	position: relative;
+	height: calc(100vh - var(--header-height));
+	align-content: center;
+	row-gap: 3rem;
+}
+
+.home1_data-subtitle,
+.home1_data-title,
+.home1_info{
+	color: var(--white-color);
+}
+
+.home1_data-subtitle{
+	display: block;
+	font-weight: var(--font-semi-bold);
+	margin-bottom: 4rem;
+	margin-top: var(--mb-0-75);
+}
+
+.home1_data-title{
+	font-size: var(--biggest-font-size);
+	font-weight: var(--font-medium);
+	margin-bottom: var(--mb-0-75);
+}
+
+.home1_info {
+	background-color: var(--first-color);
+	display: flex;
+	padding: 1.5rem 1rem;
+	border-radius: .8rem;
+	align-items: center;
+	column-gap: .5rem;
+	position: absolute;
+	right: 0;
+	bottom: 1rem;
+	width: 228px;
+  }
+  
+  .home1_info-title {
+	display: block;
+	font-size: var(--small-font-size);
+	font-weight: var(--font-semi-bold);
+	margin-bottom: var(--mb-0-75);
+  }
+  
+  .home1_info-button {
+	font-size: var(--smaller-font-size);
+  }
+  
+  .home1_info-overlay {
+	overflow: var(--img-hidden);
+  }
+  
+  .home1_info-img {
+	width: 145px;
+	transition: var(--img-transition);
+  }
+  
+  .home1_info-img:hover {
+	transform: var(--img-scale);
+  }
+
+
+
 
 
