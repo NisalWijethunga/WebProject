@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marine Life</title>
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/9c4079b285.css%22%3E">
+</head>
+<body>
+    <!--header-->
+    <section class="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="#welcome"><h1>LIFE <span>BELOW</span> WATER</h1></a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger"><div class="bar"></div></div>
+                    <ul>
+                        <li><a href="index.html"data-after="HOME">HOME</a></li>
+                        <li><a href="volunteer/volunteer.html"data-after="VOLUNTEERING">VOLUNTEERING</a></li>
+                        <li><a href="donate/donate.html"data-after="DONATE">DONATE</a></li>
+                        <li><a href="resources/resources.html"data-after="RESOURCES">RESOURCES</a></li>
+                        <li><a href="about/about.html"data-after="ABOUT">ABOUT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script >
+       const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger'); 
+const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
+const header = document.querySelector('.header .container'); 
+
+hamburger.addEventListener('click',()=> {
+   hamburger.classList.toggle('active');
+   mobile_menu.classList.toggle('active');
+});
+
+document.addEventListener('scroll',()=>{
+   var scroll_position = window.scrollY;
+   if(scroll_position>250){
+       header.style.backgroundcolor = "#29323c";
+   }else{
+       header.style.backgroundcolor ="transparent"
+   }
+})
+   </script>
+    </section>
+    <!--End header-->
+    <section id="banner">
+        <div class="banner-text">
+            <h1>About Us</h1>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br>
+    <section>
+        <div id="vision">
+            <div class="vision">
+            <h1>Our Vision</h1>
+            <p>Our Vision is turtles and their habitats 
+                to be sustainably protected, healthy and 
+                safe<br><br> from extinction and extinction threats. 
+                Furthermore, we envision healthy oceans that<br><br> 
+                humanity has always been committed to, in caring 
+                for and appreciating our global<br><br> marine biodiversity 
+                for the long-term benefit of humans and all living things on Earth.</p>
+            </div>
+    </section>
+        <br><br><br><br><br><br><br><br>
+        <div class="row">
+            <div class="sea col">
+                <img src="./image/marine10.jpeg">
+                <img src="./image/marine17.jpeg">
+                <img src="./image/marine19.jpeg">
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <div id="Mission">
+            <div class="mission">
+           <h1>Our Mission</h1>
+           <p>
+               Our Mission is to contribute to the conservation of marine turtles 
+               in the areas where we<br><br> project by working with local communities to 
+               create a future where turtles and living<br><br> people. And we’re also on 
+               a mission so people can see the beaches they love. We love<br><br> our 
+               beaches and we work with our hands to keep them healthy and beautiful.
+           </p>
+       </div>
+       </div>
+        <br><br><br><br><br><br>
+        <div class="row2">
+            <div class="beach-col">
+                <img src="./image/marine16.jpeg">
+                <img src="./image/marine7.jpeg">
+                <img src="./image/marine20.jpeg"> 
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <section class="testimonial">
+            <h1>What Our Members Says</h1>
+            <br><br><br><br>
+            <div class="row">
+                <div class="testimonial-col">
+                    <img src="./image/user1.jfif">
+                    <div>
+                        <h3>Anne Marie<br><i>Paris,France</i></h3><br><br><br><br>
+                        <p>
+                            We had the chance to see both the birth of a hundred turtles and the egg laying of a mother. <br>Great Experience !
+                        </p><br>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-col1">
+                     <img src="./image/user4.jfif">
+                    <div>
+                        <h3>Charles Steven<br><i>Roseville, Australia</i></h3><br><br><br><br>
+                        <p>
+                            We protect our beaches!
+                        </p><br>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+            </div>
+        </section>
+    <br><br><br><br><br><br>
+	<div class="footer">
+        <div class="inner_footer">
+            <div class="logo_container">
+                <img src="./image/marine logo.png">
+            </div>
+            <div class="footer_third">
+                <h1>Need help?</h1>
+                <a href="#">Terms &amp; Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer_third">
+                <h1>Content</h1>
+                <a href="index.html">Home</a>
+                <a href="about/about.html">About-us</a>
+                <a href="volunteer/volunteer.html">Volunteer</a>
+                <a href="donate/donate.html">Donate</a>
+                <a href="resources/resources.html">Resources</a>
+            </div>
+            <div class="footer_third">
+                <h1>Follow us</h1>
+                <li><a href="https://www.facebook.com/Marine-LIFE-Conservation-253990739807349/?ref=pages_you_manage"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/ConservancyLife"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/conservationmarinelife/"><i class="fab fa-instagram"></i></a></li>
+
+                <span>
+                    &COPY; All Right reserverd.<br>
+                    Pitipana - Thalagala Rd,<br>
+                     Homagama-Sri lanka
+                </span>
+            </div>
+        </div>
+     <!-- <div class="footer-bottom">&COPY; All Right reserverd to Marine-life Conservancy. </div> -->
+    </div>
+</body>
+</html>

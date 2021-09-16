@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+.header {
+  position: fixed;
+ z-index: 1000;
+ left: 0;
+ top: 0;
+ width: 100vw;
+ height: auto;
+}
+ 
+.header .header {
+  min-height: 8vh;
+  background-color:rgba(31, 30, 30, 0.24) ;
+ }
+ .header .nav-bar {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   height: 100%;
+   max-width: 1300px;
+   padding: 0 10px;
+   font-family:Montserrat ;
+   color: white;
+   font-size: 25px;
+   list-style: none;
+}
+.brand h1 span{
+  color: crimson;
+  }
+.header .nav-bar h1{
+color: white;
+list-style: none;
+}
+ .header .nav-list ul {
+   list-style: none;
+   position: absolute;
+   background-color: rgb(31, 30, 30);
+   width: 100vw;
+   height: 100vh;
+   left: 100%;
+   top: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   z-index: 1;
+   overflow-x: hidden;
+   transition: .5s ease left;
+ }
+ .header .nav-list ul.active {
+   left: 0;
+ }
+ .header .nav-list a {
+   font-size: 2.5rem;
+   font-weight: 500;
+   letter-spacing: .2rem;
+   text-decoration:none;
+   color: white;
+   text-transform: uppercase;
+   padding: 20px;
+   display: block;
+ }
+ .header .nav-list ul a::after {
+   content: attr(data-after);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(0);
+   color: rgba(240, 248, 255, 0.021);
+   font-size: 13rem;
+   letter-spacing: 50px;
+   z-index: -1;
+   transition: .3s ease letter-spacing;
+ }
+ .header .nav-list ul li:hover a::after {
+   transform: translate(-50%, -50%) scale(1);
+   letter-spacing: initial;
+ }
+ .header .nav-list ul li:hover a {
+   color: crimson;
+ }
+ .header .hamburger {
+   height: 60px;
+   width: 60px;
+   display: inline-block;
+   border: 3px solid white;
+   border-radius: 50%;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 100;
+   cursor: pointer;
+   transform: scale(.8);
+   margin-right: 20px;
+ }
+ .header .hamburger:after {
+   position: absolute;
+   content: '';
+   height: 100%;
+   width: 100%;
+   border-radius: 50%;
+   border: 3px solid white;
+   animation: hamburger_puls 1.5s ease infinite;
+ }
+ .header .hamburger .bar {
+   height: 2px;
+   width: 30px;
+   position:relative;
+   background-color: white;
+   z-index: -1;
+ }
+ .header .hamburger .bar::after,
+ .header .hamburger .bar::before{
+   content: '';
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   left: 0;
+   background-color: white;
+   transition: .3S ease;
+   transition-property: top, bottom;
+ }
+ .header .hamburger .bar::after {
+   top: 8px;
+ }
+ .header .hamburger .bar::before {
+   bottom: 8px;
+ }
+ .header .hamburger.active .bar::before{
+   bottom: 0;
+ }
+ .header .hamburger.active .bar::after{
+   top: 0;
+ }
+ .header .hamburger{
+    display: none;
+  }
+  .header .nav-list ul {
+    position: initial;
+    display: block;
+    height: auto;
+    width: fit-content;
+    background-color: transparent;
+  }
+    .header .nav-list ul li{
+    display: inline-block;
+  }
+  .header .nav-list ul li a {
+    font-size: 1.2rem;
+  }
+  .header .nav-list ul a::after{
+    display:none;
+  }
+/*End Header section*/
+@keyframes hamburger_puls{
+  0%{
+    opacity: 1;
+    transform: scale(1.3);
+  }
+  100%{
+    opacity: 0;
+    transform: scale(1.4);
+  }
+}
+@keyframes text_reveal_box{
+     50%{
+       width: 100%;
+       left: 0;
+ }
+     100% {
+       width: 0;
+       left: 100%;
+     }
+}
+@keyframes text_reveal{
+      100%{
+     color: white;
+     }
+}
+@keyframes text_reveal_name{
+    100%{
+   color:crimson;
+   font-weight: 500px;
+   }
+}*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fff3f3;
+}
+#banner{
+    height: 750px;
+    width: 1535px;
+    background-image: url(./image/marine28.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.banner-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 130px;
+}
+.banner-text h1{
+    font-size: 130px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+@media screen and (max-width: 700px) {
+    #banner{
+        background: url(./image/marine28.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 620px;
+        width: 360px;
+    }
+    .banner-text{
+        font-size: 44px;
+    }
+}
+#vision{
+	border:5px solid;
+    border-color:black;
+    font-family: sans-serif;
+    color: black;
+    font-family: 'Aladin', cursive;
+    margin-bottom:10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size:22px;
+    text-align:center;
+    margin: 100px auto;
+    width: 70%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./image/marine31.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;    
+    padding: 100px 0;
+}
+.vision h1{
+    color:#fff;
+    margin-bottom: 40px;
+    font-size: 50px;
+    padding: 0;
+}
+.vision p{
+    color: white;
+}
+@media screen and (max-width: 700px){
+    #vision{
+    border:5px solid;
+    border-color:black;
+    font-family: sans-serif;
+    color: black;
+    font-family: 'Aladin', cursive;
+    margin-bottom:10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 300px;
+    font-size:20px;
+    text-align:center;
+}
+}
+#Mission{
+	border:5px solid;
+	border-color:black;
+	font-family: sans-serif;
+	color: black;
+	font-family: 'Aladin', cursive;
+	margin-bottom:10px;
+    margin-left: 10%;
+   	margin-right: 10%;
+	font-size:22px;
+	text-align:center;
+    margin: 100px auto;
+    width: 70%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./image/marine5.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;    
+    padding: 100px 0;
+}
+.mission h1{
+    color:#fff;
+    margin-bottom: 40px;
+    font-size: 50px;
+    padding: 0;
+}
+.mission p{
+    color: white;
+}
+@media screen and (max-width: 700px){
+    #Mission{
+    border:5px solid;
+    border-color:black;
+    font-family: sans-serif;
+    color: black;
+    font-family: 'Aladin', cursive;
+    margin-bottom:10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 300px;
+    font-size:20px;
+    text-align:center;
+}
+}
+.testimonial{
+    width: 40%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background:  #ffd6cc;
+    padding: 25px;
+    border: 3px solid black;
+    cursor: pointer;
+    display: flex;
+}
+.testimonial-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+
+}
+.testimonial-col1{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background:  #ffd6cc;
+    padding: 25px;
+    border: 3px solid black;
+    cursor: pointer;
+    display: flex;
+}
+.testimonial-col1 img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.testimonial-col .fas{
+    color:#f44336;
+}
+.testimonial-col .far{
+    color:#f44336;
+}
+.testimonial-col1 .fas{
+    color:#f44336;
+}
+.testimonial-col1 .far{
+    color:#f44336;
+}
+@media screen and (max-width: 700px){
+    .testimonial{
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background:  #ffd6cc;
+    padding: 25px;
+    border: 3px solid black;
+    cursor: pointer;
+    display: flex;
+}
+.testimonial-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+
+}
+.testimonial-col1{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background:  #ffd6cc;
+    padding: 25px;
+    border: 3px solid black;
+    cursor: pointer;
+    display: flex;
+}
+.testimonial-col1 img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.testimonial-col .fas{
+    color:#f44336;
+}
+.testimonial-col .far{
+    color:#f44336;
+}
+.testimonial-col1 .fas{
+    color:#f44336;
+}
+.testimonial-col1 .far{
+    color:#f44336;
+}
+}
+*{
+    margin:0 ;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.footer
+{
+    width:100vw;
+    display: block;
+    overflow: hidden;
+    padding: 70px 0;
+    box-sizing: border-box;
+    background-color:#18181a;
+    background-attachment: fixed;
+}
+.inner_footer{
+
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 30%;
+}
+.inner_footer .logo_container{
+
+    width: 35%;
+    float: left;
+    height: 100%;
+    display: block;
+
+}
+.inner_footer .logo_container img{
+    width: 200px;
+    height: auto;
+}
+.inner_footer .footer_third{
+
+    width: calc(21.6666666667% - 20px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+}
+.inner_footer .footer_third:last-child{
+
+    margin-right: 0;
+}
+.inner_footer .footer_third h1{
+    font-family: 'arial';
+    font-size: 22px;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.inner_footer .footer_third a{
+    font-family: 'arial';
+    font-size: 15px;
+    color: white;
+    display: block;
+    font-weight: 200;
+    width: 100%;
+    padding-bottom: 5px;
+}
+.inner_footer .footer_third li{
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 20px;
+}
+.inner_footer .footer_third span{
+    color: white;
+    font-size: 14px;
+    font-family: 'arial';
+    font-weight: 200;
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+    line-height: 1.6em;
+}
+/*.footer-bottom{
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}*/
+@media(max-width: 600px){
+    .footer .inner_footer{
+        width: 90%;
+    }
+    .inner_footer .logo_container,
+    .inner_footer .footer_third{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
