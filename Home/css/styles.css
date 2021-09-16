@@ -73,6 +73,17 @@
 --img-scale-2: scale(1.1);
 }
 
+@media screen and (min-width: 968px) {
+	:root {
+		--biggest-font: 4rem;
+		--h1-font-size: 2.5rem;
+		--h2-font-size: 1.75rem;
+		--h3-fonr-size: 1.25rem;
+		--normal-font-size: 1rem;
+		--small-font-size: .875rem;
+		--smaller-font-size: .813rem;
+	}
+}
 
 .main
 {
