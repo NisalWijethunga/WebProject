@@ -125,48 +125,91 @@ body.dark-theme {
 
 
 
+/*_____________________ Base _________________________________*/
 
-
-
-
-ul li
-{
-	display: inline-block;
-	line-height: 20px;
-	margin: 5px;
-	
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
-ul li a
-{
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: var(--header-height) 0 0 0;
+	font-family: var(--body-font);
+	font-size: var(--normal-font-size);
+	background-color: var(--body-color);
+	color: var(--text-color);
+}
+
+h1,h2,h3{
+	color: var(--title-color);
+	font-weight: var(--font-semi-bold);
+	font-family: var(--title-font);
+}
+
+ul{
+	list-style: none;
+}
+
+a{
 	text-decoration: none;
-	color: #fff;
-	padding: 8px 20px;
-	margin: 15px;
-	border: 1px solid transparent;
-	border-radius: 6px;
-	transition: 0.7s ease;
 }
 
-ul li a:hover
-{
-	background-color: #fff;
-	color: #000;
+img,
+video{
+	max-width: 100%;
+	height: auto;
 }
 
-ul li.active a
-{
-	background-color: #aaa;
-	color:#000;
+button,
+input{
+	border: none;
+	font-family: var(--body-font);
+	font-size: var(--normal-font-size);
 }
 
-ul li.active a:hover
-{
-	background-color: #fff;
-	color:#000;
+button{
+	cursor: pointer;
 }
 
-/* Drop-down Menu */
+input{
+	outline: none;
+}
+
+.main {
+	overflow-x: hidden;
+  }
+
+/*_______________Reusable CSS Classes _______________________*/
+
+.section{
+	padding: 4.5rem 0 2.5rem;
+}
+
+.section_title{
+	font-size: var(--h2-font-size);
+	color: var(--title-color);
+	text-align: center;
+	text-transform: capitalize;
+	margin-bottom: var(--mb-2);
+}
+
+.container{
+	max-width: 968px;
+	margin-left: var(--mb-1);
+	margin-right: var(--mb-1);
+}
+
+.grid{
+	display: grid;
+	padding: 2rem;
+	gap: .5rem;
+}
+
 
 
 
