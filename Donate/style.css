@@ -39,7 +39,10 @@ body{
     border-radius: 1px;
 }
 
-
+.error {
+    color: red;
+    border-color: red;
+}
 #honor
 {
   text-align: center;
@@ -162,6 +165,7 @@ body{
 hr{
   border: black 1px solid;
 }
+
 .container{
   max-width: 800px;
   width: 100%;
@@ -241,4 +245,27 @@ form .input-box span.details{
  form .button input:hover{
   background: linear-gradient(-135deg, #71b7e6,#26344a);
   }
- 
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category{
+    width: 100%;
+  }
+  .content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+  .container .content .category{
+    flex-direction: column;
+  }
+}
