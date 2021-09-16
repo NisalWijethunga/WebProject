@@ -919,4 +919,40 @@ input{
   }
 
  
+  /*__________________________Media Queries __________________________________*/
+
+
+  /* For small devices */
+
+@media screen and (max-width: 340px) {
+
+	.promlem_container {
+	  grid-template-columns: max-content;
+	  justify-content: center;
+	}
+
+	.experience_content {
+		padding: 0;
+	  }
+
+	.experience_overlay:nth-child(1) {
+		width: 190px;
+	  }
+
+	.experience_overlay:nth-child(2) {
+		width: 80px;
+	  }
+	
+	.experience_img,
+	.home4_container{
+		padding: 0;
+	  }
+
+	.home1_info {
+		width: 190px;
+		padding: 1rem;
+	  }	
+}
+	
+
   
