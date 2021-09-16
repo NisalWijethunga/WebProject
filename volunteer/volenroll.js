@@ -27,4 +27,4 @@ const form = document.querySelectorAll('form');
     steps[index].classList.add('active')
     console.log(index)
 } 
-
+ 
