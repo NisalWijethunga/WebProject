@@ -43,6 +43,22 @@
 --smaller-font-size: .75rem;
 
 
+/*_______________________Font weight________________________*/
+
+--font-medium: 500;
+--font-semi-bold: 600;
+
+/*______________________Bottom Margins _____________________*/
+
+--mb-0-25: .25rem;
+--mb-0-5: .5rem;
+--mb-0-75: .75rem;
+--mb-1: 1rem;
+--mb-1-25: 1.25rem;
+--mb-1-5: 1.5rem;
+--mb-2: 2rem;
+--mb-2-5: 2.5rem;
+
 
 .main
 {
