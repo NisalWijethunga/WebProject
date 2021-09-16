@@ -60,6 +60,20 @@
 --mb-2-5: 2.5rem;
 
 
+/*___________________ z index______________________________*/
+
+--z-tooltip: 10;
+--z-fixed: 100;
+
+/*____________________ Hover Overlay ______________________*/
+
+--img-transition: .3s;
+--img-hidden: hidden;
+--img-scale: scale(1.5);
+--img-scale-2: scale(1.1);
+}
+
+
 .main
 {
 	max-width: 1400px;
