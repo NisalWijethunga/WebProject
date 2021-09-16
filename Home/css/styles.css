@@ -553,4 +553,32 @@ input{
 
 
 
+/* ___________home-4 - videos____________________*/
+
+.home4_container{
+	padding-bottom: 1rem;
+
+}
+
+.home4_description{
+	text-align: center;
+	margin-bottom: var(--mb-2-5);
+}
+
+.home4_content{
+	position: relative;
+}
+
+.home4_button{
+	position: absolute;
+	right: 1rem;
+	bottom: -1rem;
+	padding: 1rem 1.5rem;
+}
+
+.home4_button-icon {
+	font-size: 1.2rem;
+}
+  
+
 
