@@ -719,3 +719,49 @@ input{
 	right: 0.5rem;
   }
 
+
+  
+/*____________________________what we do_____________________*/
+
+
+.whatwedo_card {
+	position: relative;
+	width: 200px;
+	overflow: var(--img-hidden);
+  }
+  
+  .whatwedo_data {
+	position: absolute;
+	bottom: 1.5rem;
+	left: 1rem;
+	right: 1rem;
+  }
+  
+  .whatwedo_title, 
+  .whatwedo_description {
+	color: var(--white-color);
+  }
+  
+  .whatwedo_title {
+	font-size: var(--h3-font-size);
+	margin-bottom: var(--mb-0-25);
+  }
+  
+  .whatwedo_description {
+	display: block;
+	font-size: var(--smaller-font-size);
+  }
+  
+  .whatwedo_img {
+	transition: var(--img-transition);
+  }
+  
+  .whatwedo_img:hover {
+	transform: var(--img-scale);
+  }
+  
+  .swiper-3d .swiper-slide-shadow-left,
+  .swiper-3d .swiper-slide-shadow-right {
+	background-image: none;
+  }
+  
