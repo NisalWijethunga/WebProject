@@ -170,3 +170,35 @@ function scrollActive(){
 window.addEventListener('scroll', scrollActive)
 
 
+
+/*________________ scroll reveal animation ____________________*/
+
+
+const sr = ScrollReveal({
+    distance: '60px',
+    duration: 2800,
+    reset: true,
+})
+
+
+sr.reveal(`.home1_data, .home1_info,
+           .whatwedo_container,
+           .experience_data, .experience_overlay,
+           .problem_card,
+           .footer__data, .footer__rights`,{
+    origin: 'top',
+    interval: 100,
+})
+
+sr.reveal(`.home3_data, 
+           .home4_description,
+           .subscribe__description`,{
+    origin: 'left',
+})
+
+sr.reveal(`.home3_img-overlay, 
+           .home4_content,
+           .subscribe__form`,{
+    origin: 'right',
+    interval: 100,
+})
