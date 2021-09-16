@@ -1215,5 +1215,26 @@ input{
 	}
   }
   
+   
+  @media screen and (min-width: 1200px) {
+
+	.container {
+	  max-width: 1024px;
+	}
+  }
+
   
+  /* For tall screens on mobiles y desktop*/
+
+  @media screen and (min-height: 721px) {
+
+	body {
+	  margin: 0;
+	}
+
+	.home1_container, .home1_img {
+	  height: 640px;
+	  min-height: 100vh;
+	}
+  }
   
