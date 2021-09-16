@@ -426,6 +426,38 @@ input{
   }
 
 
+/*___________________Buttons ____________________*/
+
+.button{
+	display: inline-block;
+	background-color: var(--first-color);
+	color: var(--white-color);
+	padding: 1rem 2rem;
+	font-weight: var(--font-semi-bold);
+	transition: .3s;
+	box-shadow:  0 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover{
+	background-color: var(--first-color-alt);
+}
+
+.button--flex {
+	display: flex;
+	align-items: center;
+	column-gap: .25rem;
+  }
+  
+  .button--link {
+	background: none;
+	padding: 0;
+  }
+  
+  .button--link:hover {
+	background: none;
+  }
+
+
 
 
 
