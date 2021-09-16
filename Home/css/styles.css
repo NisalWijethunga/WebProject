@@ -223,22 +223,52 @@ input{
 	background-color: transparent;
 }
 
+/*___________________________Nav ____________________________*/
 
-
-
-
-
-
-
-
-
-/* Logo */
-
-.logo img
-{
-	float: left;
-	margin-top: 15px;
-	margin-left: 10px;
-	width: 250px;
-	height: 170px;
+.nav{
+	height: var(--header-height);
+	
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 1.5%;
 }
+
+ .nav_logo,
+ .nav_toogle{
+	color: var(--white-color);
+}
+
+.nav_logo{
+	font-weight: var(--font-semi-bold);
+	padding-left: 0rem;
+	text-align: left;
+ 	font-weight: bolder;
+ 	line-height: 1rem;
+ 	text-transform: uppercase;
+}
+
+.nav_logo span{
+ 	color:#333;
+ 	font-size: 1.5rem;
+}
+
+/*____________________________________________________________________*/
+
+.nav_toogle{
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+.nav_menu{
+	position: relative;
+}
+
+
+
+
+
+
+
