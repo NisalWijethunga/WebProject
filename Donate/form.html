@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>FORM</title>
     <link rel="stylesheet" href="style.css">
+    <script src="form.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -16,7 +17,7 @@
     <h1>DONATE TO PROTECT MARINE HABITATES</h1><br><br>
     <div class="title">Your Info:</div>
     <div class="content">
-      <form  id="validate" action="" method="POST">
+      <form  id="validate" action="donetion.php" method="POST">
         <div class="user-details">
           <div class="input-box">
             <span class="details">First Name</span>
@@ -65,7 +66,7 @@
           
            <div class="input-box">
             <span class="details">Credit card number</span>
-            <input ttype="text" id="ccnum" name="cardnumber"  placeholder="1111-2222-3333-4444"required>
+            <input ttype="text" id="ccnum" name="cardnumber" data-mask="0000 0000 0000 0000" placeholder="1111-2222-3333-4444"required>
           </div>
            <div class="input-box">
             <span class="details">Exp Month</span>
@@ -75,11 +76,11 @@
           <div class="row">
                             <div class="col-50">
                                 <label class="label" for="expyear">Exp Year</label>
-                                <input class="pay" type="text" id="expyear"  name="expyear" placeholder="2021"required>
+                                <input class="pay" type="text" id="expyear" data-mask="0000" name="expyear" placeholder="2021"required>
                             </div>
                             <div class="col-50">
                                 <label class="label" for="cvv">CVV</label>
-                                <input class="pay"  type="text" id="cvv" name="cvv" placeholder="000"required>
+                                <input class="pay" data-mask="000" type="text" id="cvv" name="cvv" placeholder="000"required>
                             </div>
                         </div>
             <div>
@@ -135,8 +136,8 @@
     </label>
     </div>
 </div>
-<label for="gift">I didn't Like to make a gift</label><br>
-            <input id="gift" name="gift" value="No" type="checkbox" ">
+<label for="gift">I don't Like to make a gift</label><br>
+            <input id="gift" name="gift" value="No" type="checkbox" onclick="myFunction()">
             <div id="honor">
             In Honor or memory
             <br>
@@ -157,7 +158,13 @@
        <div class="name">Memory</div>
       </div>
     </label>
-    </div>
+
+    <!-- <div class="user-details">
+          <div class="input-box">
+            <span class="details" id="honaree">Honaree name</span>
+            <input name="fname" type="text" placeholder="Honaree Name">
+          </div>
+    </div>-->
 </div>
 </div>
           </div>
@@ -225,7 +232,7 @@
         },
     });
 </script>
-
-
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 </body>
 </html>
