@@ -55,3 +55,25 @@ button.next-btn{
     font-size: 18px;
     cursor: pointer;
 }
+button.previous-btn{
+    float: left;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(180, 220, 255);
+    font-family: 'Montserrat';
+    font-size: 18px;
+    cursor: pointer; 
+}
+button.submit-btn{
+    float: right;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    background-color: aquamarine;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    cursor: pointer;
+}
