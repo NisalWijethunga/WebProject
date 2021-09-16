@@ -309,5 +309,44 @@ input{
 
 
 
+/*---- Show Menu -----*/
+
+.show-menu{
+	right: 0;
+}
+
+
+/*---- Change background Header ----*/
+
+.scroll-header{
+	background-color: var(--body-color);
+	min-height: 5rem;
+	box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
+}
+
+.scroll-header .nav_toogle,
+.scroll-header .nav_logo{
+	color: var(--title-color);
+}
+
+/*----- Active Link ----*/
+
+.active-link {
+	position: relative;
+	color: var(--title-color);
+  }
+  
+  .active-link::before {
+	content: '';
+	position: absolute;
+	background-color: var(--title-color);
+	width: 100%;
+	height: 2px;
+	bottom: -.75rem;
+	left: 0;
+  }
+  
+
+
 
 
